@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container-fluid home">
+            <header class="row">
+                <div class="col-4">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <img src="assets/home/phone.png" class="phone"/>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>INIGUALABLE</h5>
+                                <h6>TV INTERACTIVA + TELEFONÍA FIJA A UN PRECIO <span style="color:#0063BC">INCREÍBLE</span></h6>
+                                <div class="form-group">
+                                    <input class="form-control phone-input" type="text" placeholder="Tu teléfono">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">He leído y acepto las políticas de privacidad.</label>
+                                </div>
+                                <button type="button" class="btn btn-llamenme">Llámenme</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="assets/home/megacable.png" class="logo">
+                </div>
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/contrata/alfiler.svg" class="pin"/>
+                </button>
+            </header>
+
+            <div class="row img-contrata">
+                <div class="col texto-contrata">
+                    <div id="internet">Internet <span style="font-weight:bold">INIGUALABLE</span></div>
+                    <div id="tv" >TV Interactiva + Telefonía Fija</div>
+                    <div id="precio">Desde <span style="font-size:37px">$499</span> al mes</div>
+                    <button id="loquiero" class="btn-contrata2">LO QUIERO</button>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          ¡Contrata ahora!
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Déjanos tu número y </p>
+                            <p class="card-text">te llamamos en segundos</p>
+                            <p class="sin">Si es celular sin el 044 o 045.</p>
+                            <div class="form-group2">
+                                <input class="form-control2" type="text" style="font-size:12px" placeholder="Tu teléfono">
+                            </div>
+                            <div class="form-check2">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">He leído y acepto las políticas de privacidad.</label>
+                            </div>
+                          <button class="btn-cta-llamame">LLÁMAME</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row banner">
+                <button id="tripple" class="btn-contrata2">TRIPLE PACK</button>
+                <button id="doble" class="btn-contrata2">DOBLE PACK</button>
+            </div>
+
+            <!--Here starts the collapsible row 1-->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col img-mbp">
+                        <img src="assets/contrata/Imagen1.png">
+                        <p class="canales"> +80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div class="col">
+                        <button id="loquieroRow" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--Here starts the collapsible rows 2-->
+             <div class="collapse-rows">
+                <div class="row">
+                    <div class="col img-mbp">
+                        <img src="assets/contrata/Imagen2.png">
+                        <p class="canales"> +120 Canales + 90 Canales HD</p>
+                    </div>
+                    <div class="col">
+                        <button id="loquieroRow" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 3-->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col img-mbp">
+                        <img src="assets/contrata/Imagen3.png">
+                        <p class="canales"> +120 Canales + 90 Canales HD</p>
+                    </div>
+                    <div class="col">
+                        <button id="loquieroRow" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 4-->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col img-mbp">
+                        <img src="assets/contrata/Imagen4.png">
+                        <p class="canales">+120 Canales + 90 Canales HD</p>
+                    </div>
+                    <div class="col">
+                        <button id="loquieroRow" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample4">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 5 -->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="viewTotal">XVIEW TOTAL 200</p>
+                    </div>
+                    <div class="col-6 img-mbp">
+                        <img src="assets/contrata/Imagen4.png">
+                        <p class="canales"> + 80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div class="col-3">
+                        <button id="xviewBtn" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample5">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 6 -->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="viewTotal">XVIEW TOTAL 350</p>
+                    </div>
+                    <div class="col-6 img-mbp">
+                        <img src="assets/contrata/Imagen5.png">
+                        <p class="canales"> + 80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div class="col-3">
+                        <button id="xviewBtn" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample6">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 7 -->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="viewTotal">XVIEW TOTAL 500</p>
+                    </div>
+                    <div class="col-6 img-mbp">
+                        <img src="assets/contrata/Imagen6.png">
+                        <p class="canales"> + 80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div class="col-3">
+                        <button id="xviewBtn" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample7">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Here starts the collapsible rows 8 -->
+            <div class="collapse-rows">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="viewTotal">XVIEW TOTAL 1GB</p>
+                    </div>
+                    <div class="col-6 img-mbp">
+                        <img src="assets/contrata/Imagen7.png">
+                        <p class="canales"> + 80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div class="col-3">
+                        <button id="xviewBtn" class="btn-contrata2">LO QUIERO</button>
+                    </div>
+                </div>
+                <button class="btn-circle-collapse" type="button" data-toggle="collapse" data-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample2">+</button>
+                <div class="collapse multi-collapse" id="multiCollapseExample8">
+                    <div class="card-body-collapse">
+                        <p class="canales">TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <div class="row collapseInfo">
+                            <div class="col wifiInfo">
+                                <img src="assets/contrata/wifi.svg" class="wifi">
+                                <p class="conexion">Conexión a Internet</p>
+                            </div>
+                            <div class="col">
+                               <img src="assets/contrata/ui.svg" class="ui">
+                               <div class="ilimitadas">
+                                    <p class="conexion">Llamadas ilimitadas</p>
+                                    <p class="paises">Nacionales | A EUA y Canadá | A móviles</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>    
+</body>
+</html>
