@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container-fluid home">
+            <header class="row">
+                <div class="col-4">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <img src="assets/home/phone.png" class="phone"/>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>INIGUALABLE</h5>
+                                <h6>TV INTERACTIVA + TELEFONÍA FIJA A UN PRECIO <span style="color:#0063BC">INCREÍBLE</span></h6>
+                                <div class="form-group">
+                                    <input class="form-control phone-input" type="text" placeholder="Tu teléfono">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">He leído y acepto las políticas de privacidad.</label>
+                                </div>
+                                <button type="button" class="btn btn-llamenme">Llámenme</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <img src="assets/home/megacable.png" class="logo">
+                </div>
+            </header>
+
+            <div class="row">
+                <div class="col image1">
+                    <button class="btn-velo"></button>
+                    <div id="inigualable" class="text1">INIGUALABLE</div>
+                    <div id="incomparable" class="text1">INCOMPARABLE</div>
+                    <div id="increible" class="text1">INCREÍBLE</div>
+                    <button class="btn-contrata">CONTRATA HOY</button>
+                </div>
+                <div class="col image2">
+                    <button class="btn-velo2"></button>
+                    <button class="btn-ayuda">ERES CLIENTE Y NECESITAS AYUDA</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
