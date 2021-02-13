@@ -536,12 +536,59 @@ h6{
 
 .iconos{
     width:98px;
+    margin: auto;
+    display: block;
 }
 
-.atencion-clientes{
+.atencion{
     background-color: #0063BC;
+    height: 76px;
 }
 
+.mail{
+    padding-top:20px;
+    padding-left:360px;
+}
+
+.telefono{
+    padding-top:20px;
+}
+.ayuda-texto1{
+   font-size:22px;
+   text-align: center; 
+   line-height: 123%;
+   margin-top:43px;
+
+   
+}
+
+.parrafo1{
+    max-width: 909px;
+    margin:0 auto;
+    
+}
+
+.parrafo2{
+    max-width: 714px;
+    margin:0 auto;
+    
+}
+
+.opciones{
+    margin:20px 0 20px 0;
+}
+.opciones-texto{
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.atencion-texto{
+    font-size:18px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left:10px;
+}
 
 /*Footer Styling*/
 
@@ -612,6 +659,22 @@ footer{
     margin-top: 25px;
     margin-left: -117px;
    
+}
+
+.btn-ayuda2 {
+    width:243px;
+    height:58px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 4px solid #FF6A00;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 16px/19px Roboto;
+    letter-spacing: 0.4px;
+    color: #FF6A00;
+    opacity: 1; 
+    margin-top: 50px;
+    margin-left: 563px;
 }
 /* Media queries*/
 
