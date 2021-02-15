@@ -541,6 +541,8 @@ h6{
     text-align: center;
     padding-top:200px;
     color: #ffffff;
+    transform-origin: 35% 30%;
+    animation: pulse .8s ease-out .90s;
 }
 .texto-ayuda2{
     font-size:80px;
@@ -549,6 +551,8 @@ h6{
     text-align: center;
     color: #ffffff;
     margin-top: -150px;
+    transform-origin: 40% 40%;
+    animation: pulse .8s ease-out .90s;
  
 }
 
@@ -561,6 +565,15 @@ h6{
     width:98px;
     margin: auto;
     display: block;
+    transform-origin: 35% 30%;
+    animation: pulse .8s ease-out .90s;
+}
+
+@keyframes pulse {
+    10%  {
+        transform: scale(.9) skewX(1deg);
+        opacity: 0.5;
+    }
 }
 
 .atencion{
