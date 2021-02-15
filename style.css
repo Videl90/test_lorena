@@ -21,6 +21,16 @@ body{
 .phone:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    outline:0;
+}
+
+.btn:active {
+    outline: none;
+    border: none;
+}
+
+.btn:focus {
+    outline:0;
 }
 
 .home {
@@ -62,9 +72,14 @@ header {
     margin-left:87px;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
 .btn-contrata {
     background: #0063BC;
     border: 3px solid #FFFFFF;
+    font: normal normal bold 16px/19px Roboto;
     border-radius: 4px;
     opacity: 1;
     width: 319px;
@@ -77,8 +92,9 @@ header {
 }
 
 .btn-contrata:hover {
-    background: #7c3b3b;
-   
+    background: #ffffff;
+    border: 3px solid #0063BC;
+    color: #0063BC;
 }
 
 .btn-ayuda {
@@ -93,8 +109,16 @@ header {
     letter-spacing: 0.4px;
     color: #FF6A00;
     opacity: 1; 
-    margin-top: 527px;
+    margin-top: 547px;
     margin-left: 87px;
+}
+
+.btn-ayuda:hover {
+
+    background: #FF6A00 0% 0% no-repeat padding-box;
+    border: 4px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
 }
 
 #inigualable{
@@ -110,7 +134,7 @@ header {
     margin-top:5px;
 }
 
-.btn-velo {
+/*.btn-velo {
     background: var(--background-color); 
     opacity: 0.85;
     width: 684px;
@@ -180,12 +204,21 @@ header {
 .btn-velo2:hover::before,
 .btn-velo2:focus::before {
     transform: scaleX(0);
-}
+}*/
 
 
 
 /*Modal Styles*/
 .modal-content{
+    width: 578px;
+    height: 578px;
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #ffffff;
+}
+
+.modal-body{
     width: 578px;
     height: 578px;
     -moz-border-radius: 50%;
@@ -211,7 +244,7 @@ header {
 
 .modal {
     background-color: #000000;
-    opacity:0.9;
+   
 }
 
 h5{
@@ -305,6 +338,8 @@ h6{
     opacity: 1;
     font-weight: bold;
 }
+
+
 
 #loquiero{
     margin-top: 60px;
@@ -437,6 +472,10 @@ h6{
     padding-left:40px;
 }
 
+.img-mbp2{
+    margin-left: -84px;
+}
+
 .canales {
     font-size:18px;
     font-weight:bold;
@@ -450,6 +489,11 @@ h6{
     margin-top:30px;
     margin-left:270px;
     margin-bottom:20px;
+}
+
+#loquieroRow3{
+    margin-top:36px;
+    margin-left:106px;
 }
 
 .wifi{
@@ -491,6 +535,7 @@ h6{
 }
 
 .viewTotal{
+    width: 230px;
     font-size:22px;
     color:#434343;
     font-weight:bold;
@@ -692,17 +737,22 @@ footer{
    
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:575px) {
     .logo{
         margin-left: -25px;
     }
 
     .phone{
         margin-left: 0px;
+        margin-top:-5px
+    }
+
+    .text1{
+        font-size:52px;
     }
 
     .pin {
-        margin-left:90px;
+        margin-left:81px;
     }
     .text1 {
         margin-left: 0px;
@@ -714,7 +764,7 @@ footer{
     }
 
     .btn-ayuda {
-        margin-left: 0px;
+        margin-left: -20px;
     }
 
     .card {
@@ -723,36 +773,70 @@ footer{
 
     .texto-contrata{
         margin-left: 10px;
-        padding-top:20px;
+        padding-top:12px;
+    }
+
+    #precio{
+        height: 60px;
+        padding-top:3px;
+        margin-top:5px;
     }
 
     #loquiero{
-        margin-top:30px;
+        margin-top:25px;
+    }
 
+    #tv{
+       font-size:25px; 
     }
 
     #triple {
-        margin-left:20px;
+        margin-left:13px;
         margin-top:40px;
+        width: 200px;
     }
 
     #doble{
-        margin-left:277px;
+        margin-left:222px;
         margin-top:-74px;
+        width: 200px;
     }
-
+     /*COLLAPSIBLE ROWS*/
     .collapse-rows{
         margin-left:0px;
     }
     
+    .canales{
+        margin-left:0;
+        font-size: 16px;
+    }
+
+    .card-body-collapse{
+        padding: 20px 0 0 23px;
+
+    }
+
     .card {
         margin-left: 10px;
         margin-top:30px;
         margin-bottom:100px;
     }
 
+    .wifiInfo{
+        margin-left: 6px;
+    }
+
+    .conexionInfo{
+        margin-left: -246px;
+        margin-top: 60px;   
+    }
+
     #loquieroRow {
-        margin-left:140px;
+        margin-left:83px;
+    }
+
+    #loquieroRow3{
+        margin-left: 87px;
     }
 
     #xviewBtn {
@@ -761,13 +845,112 @@ footer{
     }
 
     .img-mbp2{
-        padding-left:10px;
+        margin-left: 6px;
+        margin-top:-25px;
+    }
+
+    .total200{
+
+        margin-left: 95px;
+    }
+
+    /*MODAL CONTENT QUERIES*/
+
+    .modal-dialog{
+        margin-left:-10px;
     }
 
     .modal-content{
-        margin-left:-45px;
-        
+        margin-left:-60px;
     }
 
- 
+    h5{
+        padding-left:141px;
+    }
+    h6{
+        max-width: 413px;
+        margin-left:64px;
+    }
+
+    .phone-input{
+        margin-left:106px;
+    }
+
+    .form-check{
+        margin-left:106px;
+    }
+
+    .btn-llamenme{
+        margin-left:106px;
+    }
+    
+    .close{
+        margin-left: 440px!important;
+        color: #fff;
+    }
+
+    /*FOOTER*/
+    .logo-footer{
+        margin-left:0px;
+    }
+    .legales{
+        margin-top: -77px;
+        margin-left: 300px;
+        text-align: right;
+    }
+
+    .terminos{
+        margin-left:0px;
+    }
+
+    .white-row {
+        height:200px;
+    }
+
+    .contacto{
+        width: 200px;
+        padding-left: 0;
+    }
+
+    .footer-phone-input{
+        margin-left: -131px;
+    }
+
+    .form-check3{
+        margin-left: -663px;
+        margin-top: 103px;  
+    }
+
+    .solicitar{
+        margin-top: 98px;
+        margin-left: -814px;
+    }
+
+    /*AYUDA*/
+
+    .texto-ayuda1{
+        margin-left: 120px;
+    }
+
+    .texto-ayuda2{
+        font-size: 53px;
+        margin-left: 13px;
+    }
+
+    .mail{
+        padding-top: 25px;
+        padding-left: 36px;
+    }
+    .telefono{
+        margin-top:47px;
+        margin-left:-413px;
+    }
+
+    .atencion{
+        height: 115px;
+    }
+
+    .parrafo2{
+        margin-bottom:-153px;
+    }
 }
